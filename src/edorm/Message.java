@@ -60,11 +60,13 @@ public class Message {
     public String getMessage(){
         return messageContent;
     }
-    public void createMessage(){
+    public String createMessage(){
         //method ที่เกี่ยวกับการสร้าง message
+        return messageContent;
     }
-    public void deleteMessage(){
+    public String deleteMessage(){
         //method ที่เกี่ยวกัยการลบ Message 
+        return messageContent;
     }
     
     
