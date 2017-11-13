@@ -14,6 +14,14 @@ public class Pacel {
     private String pacelType;
     private String studentName;
 
+    public Pacel(int pacelId, String pacelType, String studentName) {
+        this.pacelId = pacelId;
+        this.pacelType = pacelType;
+        this.studentName = studentName;
+    }
+    
+    
+
     public int getPacelId() {
         return pacelId;
     }
