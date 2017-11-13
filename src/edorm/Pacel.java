@@ -47,18 +47,24 @@ public class Pacel {
     }
     
     
-    
-    public void createPacel(){
+     public int getPacel(){
         //หลังจากสร้าง pacel เสร็จแล้ว ก็เก็บข้อมูลลง DB
+        return pacelId;
+    }
+    public int createPacel(){
+        //หลังจากสร้าง pacel เสร็จแล้ว ก็เก็บข้อมูลลง DB
+        return pacelId;
     }
     
-    public void deletePacel(){
+    public int deletePacel(){
         //หลังจาก กด deleteเสร็จแล้ว ก็ลบข้อมูลใน DB
+        return pacelId;
     }
     
     public int  updatePacel(){
         return pacelId;
         //method แทนที่ข้อมูลใหม่ในข้อมูลเดิม 
+        
     }
     
    

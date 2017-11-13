@@ -73,7 +73,42 @@ public class Activity {
         this.activityDesc = activityDesc;
         this.activityStatus = activityStatus;
     }
-
+      public int getActivity (){
+      // method ดึงข้อทมูลของ activity ของdata base
+      return activityId;
+      }
+       public int updateActivity (){
+      // method updateข้อมูลของ activity ของdata base
+      return activityId;
+      }
+        public int createActivity (){
+      // method สร้างข้อมูลของ activity ของdata base
+      return activityId;
+      }
+        public int deleteActivity (){
+      // method ลบข้อมูลของ activity ของdata base
+      return activityId;
+      }
+      public int getPoint (){
+      // method ดึงข้อมูลของ point  ของdata base
+      return pointId;
+      }
+      public int addPoint (){
+      // method สร้างข้อมูลของ point  ของdata base
+      return pointId;
+      }
+      public int deletePoint (){
+      // method ลบข้อมูลของ point  ของdata base
+      return pointId;
+      }
+      public int updatePoint (){
+      // method update ข้อมูลของ point  ของdata base
+      return pointId;
+      }
+      public int pointAmount (){
+      // method รวมข้อมูลของ point  ของdata base
+      return pointId;
+      }
     @Override
     public String toString() {
         return "Activity{" + "activityId=" + activityId + ", acctivityPoint=" + acctivityPoint + ", pointId=" + pointId + ", activityName=" + activityName + ", activityDesc=" + activityDesc + ", activityStatus=" + activityStatus + '}';
