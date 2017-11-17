@@ -15,12 +15,6 @@ public class Form {
     private String stdDepart;
     private int RoomNumber;
     private String stdEmail;
-    private String Describe;
-
-    @Override
-    public String toString() {
-        return "Form{" + "stdFac=" + stdFac + ", stdDepart=" + stdDepart + ", RoomNumber=" + RoomNumber + ", stdEmail=" + stdEmail + ", Describe=" + Describe + '}';
-    }
 
     public String getStdFac() {
         return stdFac;
@@ -53,15 +47,10 @@ public class Form {
     public void setStdEmail(String stdEmail) {
         this.stdEmail = stdEmail;
     }
+   
 
-    public String getDescribe() {
-        return Describe;
-    }
+    
 
-    public void setDescribe(String Describe) {
-        this.Describe = Describe;
-        
-    }
 public  String stdFac (){
       // method รวมข้อมูลของ point  ของdata base
       return  stdFac;
@@ -78,17 +67,20 @@ public String stdEmail(){
       // method รวมข้อมูลของ point  ของdata base
       return stdEmail;
       }
-public String Describe(){
-      // method รวมข้อมูลของ point  ของdata base
-      return Describe;
-      }
+
     public Form(String stdFac, String stdDepart, int RoomNumber, String stdEmail, String Describe) {
         this.stdFac = stdFac;
         this.stdDepart = stdDepart;
         this.RoomNumber = RoomNumber;
         this.stdEmail = stdEmail;
-        this.Describe = Describe;
+   
     }
+
+    @Override
+    public String toString() {
+        return "Form{" + "stdFac=" + stdFac + ", stdDepart=" + stdDepart + ", RoomNumber=" + RoomNumber + ", stdEmail=" + stdEmail + '}';
+    }
+    
 }
 
    
