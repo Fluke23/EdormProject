@@ -51,22 +51,6 @@ public class Form {
 
     
 
-public  String stdFac (){
-      // method รวมข้อมูลของ point  ของdata base
-      return  stdFac;
-      }
-public  String stdDepart (){
-      // method รวมข้อมูลของ point  ของdata base
-      return  stdDepart;
-      }
-public  int RoomNumber (){
-      // method รวมข้อมูลของ point  ของdata base
-      return  RoomNumber;
-      }
-public String stdEmail(){
-      // method รวมข้อมูลของ point  ของdata base
-      return stdEmail;
-      }
 
     public Form(String stdFac, String stdDepart, int RoomNumber, String stdEmail, String Describe) {
         this.stdFac = stdFac;
