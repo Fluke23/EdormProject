@@ -90,7 +90,7 @@ public class Admin extends User{
         return pacelId; 
      }
     
-      }
+      
     private int createWaterPayment(paymentId ,paymentName, paymentAmountWater, paymentStatus,  paymentDate ,studentRoom){
         //method สำหรับ admin ที่ใช้ในการสร้าง payment (ค่าน้ำ ค่าไฟ) โดยมีการส่ง paymentId ,paymentName, paymentAmountWater, paymentStatus,  paymentDate ,studentRoom เป็น parameter 
         return paymentId;
@@ -108,6 +108,13 @@ public class Admin extends User{
         //เป็น method สำหรบ admin ใช้ในการสร้าง GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId,describePurpose,AdvisorComment เป็น parameter;
         return  GeneralFormId;
     }
+    
+     private int updateGeneralForm(admin,generalFormId){
+        //เป็น method สำหรบ admin ใช้ในการอัพเดท GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId เป็น parameter;
+        return  GeneralFormId;
+    }
+    
+    
     @Override
     public String toString() {
         return "Admin{" + "adminId=" + adminId + ", adminName=" + adminName + ", adminPosition=" + adminPosition + '}';
