@@ -98,9 +98,7 @@ public class Activity {
           // object ของ activity   ใช้ parameter เป็น studentId
       return pointId;
       }
-      public int addPoint (activityId){
-      // เป็น method สำหรับ admin ไว้ เพิ่ม point สำหรับactivity นั้นๆ โดยใช้ parameter เป็น activityId 
-      return pointId;
+      
       }
       public int deletePoint (activityId){
       //   เป็น method สำหรับ admin ไว้ ลบ point สำหรับ activity นั้นๆ โดยใช้ parameter เป็น activityId  
@@ -111,10 +109,7 @@ public class Activity {
       //จะถูกเก็บลง database และ ถูกดึงึ้นมาโชว์ใหม่ ผ่าน object ของ activity นั้นๆ 
       return pointId;
       }
-      public int pointAmount (studentId){
-      // เป็น method ไว้คำนวน point ทั้งหมด ของทุก activity ใน user นั้นๆ โดยส่ง parameter เป็น studentId  
-      return pointId;
-      }
+     
     @Override
     public String toString() {
         return "Activity{" + "activityId=" + activityId + ", acctivityPoint=" + acctivityPoint + ", pointId=" + pointId + ", activityName=" + activityName + ", activityDesc=" + activityDesc + ", activityStatus=" + activityStatus + '}';
