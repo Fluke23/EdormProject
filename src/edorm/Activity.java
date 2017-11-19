@@ -73,43 +73,45 @@ public class Activity {
         this.activityDesc = activityDesc;
         this.activityStatus = activityStatus;
     }
-      public int getActivity (){
-      // เป็น method ไว้ดูคะแนนโดยเมื่อ user กดเข้าไป จะทำการดึงค่าคะแนนรวมของ Object Student และลิสขัอมูลกิจกรรมต่างๆ มาจาก Object ของ Activity"
-      //
+      public int getActivity (studentId){
+      // เป็น method ไว้ดูคะแนนโดยเมื่อ user กดเข้าไป จะทำการดึงค่าคะแนนรวมของ Object Student และลิสขัอมูลกิจกรรมต่างๆ มาจาก Object ของ Activity" 
+      // โดยใช้ parameter เป็น studentId
       return activityId;
       }
-       public int updateActivity (){
+       public int updateActivity (activityId){
       // เป็น method update (แก้ไข) Activity สำหรับ admin โดย admin สามารถ แก้ไข ชื่อ Activity , Detail Activity and point Activity โดยดึงข้อมูลจาก Object ของ Acivity ขึ้นมา 
-//    //จากนั้น ก็แก้ไข แล้วบันทึก หลังจากนั้นข้อมูลทั้งหมดก็ถูกเก็บลง Database 
+    //จากนั้น ก็แก้ไข แล้วบันทึก หลังจากนั้นข้อมูลทั้งหมดก็ถูกเก็บลง Database 
+     // โดยใช้ parameter เป็น activityId
       return activityId;
       }
-        public int createActivity (){
+        public int createActivity (activityId){
       // เป็น method สำหรับ admin ไว้สร้าง Activity หลังจากนั้นก็เก็บข้อมูลลง Database
+      // โดยใช้ parameter เป็น activityId
       return activityId;
       }
-        public int deleteActivity (){
+        public int deleteActivity (activityId){
       // เป็น method ลบ activity สำหรับ admin โดย สามารถลบ ข้อมูลท้ั้งหมดของ activity นั้น โดย ใช้ paramether เป็น activityId  
       return activityId;
       }
-      public int getPoint (){
+      public int getPoint (studentId){
       // เป็น method ไว้ดึงคะแนนขึ้นมาโชว์บน activity  โดยเมื่อ user กดเข้าไปดูใน หน้า Activity ก็จะทำการดึงข้อมูลของ point นั้นๆ ของแต่ละ activity มาจาก 
-          // object ของ activity 
+          // object ของ activity   ใช้ parameter เป็น studentId
       return pointId;
       }
-      public int addPoint (){
+      public int addPoint (activityId){
       // เป็น method สำหรับ admin ไว้ เพิ่ม point สำหรับactivity นั้นๆ โดยใช้ parameter เป็น activityId 
       return pointId;
       }
-      public int deletePoint (){
+      public int deletePoint (activityId){
       //   เป็น method สำหรับ admin ไว้ ลบ point สำหรับ activity นั้นๆ โดยใช้ parameter เป็น activityId  
       return pointId;
       }
-      public int updatePoint (){
+      public int updatePoint (activityId){
       //  เป็น method สำหรับ admin ไว้ update(แก้ไข) point สำหรับ activity นั้นๆ โดยใช้ parameter เป็น activityId หลังจากแก้ไขเสร็จ ข้อมูลใหม่ 
       //จะถูกเก็บลง database และ ถูกดึงึ้นมาโชว์ใหม่ ผ่าน object ของ activity นั้นๆ 
       return pointId;
       }
-      public int pointAmount (){
+      public int pointAmount (studentId){
       // เป็น method ไว้คำนวน point ทั้งหมด ของทุก activity ใน user นั้นๆ โดยส่ง parameter เป็น studentId  
       return pointId;
       }
