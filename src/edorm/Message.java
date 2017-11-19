@@ -60,12 +60,8 @@ public class Message {
     public String getMessage(){
         return messageContent;
     }
-    public String createMessage(){
-        //method ที่เกี่ยวกับการสร้าง message
-        return messageContent;
-    }
-    public String deleteMessage(){
-        //method ที่เกี่ยวกัยการลบ Message 
+    public String createMessage(studentId,messageTopic,messageDate,messageContent){
+        //method ไว้สำหรับสร้าง personal messaging ไว้ส่ง หา admin เพื่อติดต่อ  มีการส่ง studentid,messageTopic,messageDate,messageContent เป็น parameter 
         return messageContent;
     }
     
