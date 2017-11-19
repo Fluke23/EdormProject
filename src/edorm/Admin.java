@@ -102,7 +102,12 @@ public class Admin extends User{
     private int deletePayment(paymentId){
         //method สำหรับ admin ที่ใช้ในการลบ payment โดยมีการส่ง paymentId เป็น parameter
         return paymentId;
+   }
 
+    private int createGeneralForm(adminId, generalFormId,describePurpose,AdvisorComment){
+        //เป็น method สำหรบ admin ใช้ในการสร้าง GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId,describePurpose,AdvisorComment เป็น parameter;
+        return  GeneralFormId;
+    }
     @Override
     public String toString() {
         return "Admin{" + "adminId=" + adminId + ", adminName=" + adminName + ", adminPosition=" + adminPosition + '}';
