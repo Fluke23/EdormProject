@@ -75,20 +75,19 @@ public class Admin extends User{
       return pointId;
       }
     
-     public int createPacel(){
-        // เป็น method สำหรับ admin ไว้สำหรับสร้าง paccel ของที่ถูกส่งมา โดยมีการส่ง studentName และ studentId เป็น parameter
+     public int createPacel(studentName){
+        // เป็น method สำหรับ admin ไว้สำหรับสร้าง pacel ของที่ถูกส่งมา โดยมีการส่ง studentName เป็น parameter
         return pacelId;
       }
     
-    public int deletePacel(){
-        //หลังจาก กด deleteเสร็จแล้ว ก็ลบข้อมูลใน DB
+    public int deletePacel(studentName){
+        // เป็น method สำหรับ admin ไว้สำหรับลบ pacel  โดยมีการส่ง studentName เป็น parameter
         return pacelId;
      }
     
-    public int  updatePacel(){
-        return pacelId;
-        //method แทนที่ข้อมูลใหม่ในข้อมูลเดิม 
-        
+    public int  updatePacel(studentName){
+        //เป็น method สำหรับ admin ไว้สำหรับแก้ไข pacel สำหรับอันที่ต้องการแก้ไขข้อมูล โดยมีการส่ง studentName เป็น parameter
+        return pacelId; 
      }
 
     @Override
