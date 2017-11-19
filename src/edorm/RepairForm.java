@@ -43,12 +43,12 @@ public class RepairForm extends Form{
         return "RepairForm{" + "describeThingRepair=" + describeThingRepair + ", DetailProcessing=" + DetailProcessing + '}';
     }
  
-public String describeThingRepair(){
-      // method รวมข้อมูลของ point  ของdata base
+public String describeThingRepair(repairFormId){
+      // method สำหรับให้ Student อธิบายสิ่งของที่เสีย ที่ต้องการซ่อมแซม โดยมี parameter คือ repairFormId
       return  describeThingRepair;
       }
-public String DetailProcessing (){
-      // method รวมข้อมูลของ point  ของdata base
+public String DetailProcessing (repairFormId){
+      // method สำหรับให้ผู้ดูแลการซ่อม(พนังงานหรือช่างซ่อม) อธิบายการดำเนินการซ่อมแซม โดยมีการส่ง parameter เป็น repairFormId
       return DetailProcessing;
       }
     
