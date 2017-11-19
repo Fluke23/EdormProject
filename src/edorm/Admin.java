@@ -119,6 +119,23 @@ public class Admin extends User{
         return  GeneralFormId;
     }
     
+     private int createRepairForm(adminId,repairForm,describeThingRepair,detailProcessing){
+        //เป็น method สำหรับ admin ใช้ในการสร้าง GeneralForm ขึ้นมา โดยมีกาส่ง adminId, repairFormId, describeThingRepair,detailProcessing เป็น parameter;
+        return  repairFormId;
+    }
+    
+      private int updateRepairForm(adminId,repairFormId){
+        //เป็น method สำหรับ admin ใช้ในการแก้ไข repairForm  โดยมีกาส่ง adminId, repairFormId เป็น parameter;
+        return  repairFormId;
+    }
+    
+    private int deleteRepairForm(adminId,repairFormId){
+        //เป็น method สำรับ admin ใช้ในการลบ repairForm  โดยมีกาส่ง adminId, repairFormId เป็น parameter;
+        return  repairFormId;
+    }
+    
+   
+    
     
     @Override
     public String toString() {
