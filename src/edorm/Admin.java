@@ -48,6 +48,15 @@ public class Admin extends User{
         //method เกี่ยวกับการตรวจเช็คว่า Username และpassword ถูกต้องหรือไม่ และมีใน Database หรือเปล่า 
        
     }
+     public int createActivity (activityId,activityName,activityPoint,activityDes,activityStatus){
+      // เป็น method สำหรับ admin ไว้สร้าง Activity หลังจากนั้นก็เก็บข้อมูลลง Database
+      // โดยใช้ parameter เป็น activityId
+      return activityId;
+      }
+        public int deleteActivity (activityId){
+      // เป็น method ลบ activity สำหรับ admin โดย สามารถลบ ข้อมูลท้ั้งหมดของ activity นั้น โดย ใช้ paramether เป็น activityId  
+      return activityId;
+      }
   
 
     @Override
