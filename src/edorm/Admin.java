@@ -57,7 +57,12 @@ public class Admin extends User{
       // เป็น method ลบ activity สำหรับ admin โดย สามารถลบ ข้อมูลท้ั้งหมดของ activity นั้น โดย ใช้ paramether เป็น activityId  
       return activityId;
       }
-  
+    
+      public int updateActivity (activityId){
+      // เป็น method update (แก้ไข) Activity สำหรับ admin โดย admin สามารถ แก้ไข ชื่อ Activity , Detail Activity and point Activity โดยดึงข้อมูลจาก Object ของ Acivity ขึ้นมา 
+    //จากนั้น ก็แก้ไข แล้วบันทึก หลังจากนั้นข้อมูลทั้งหมดก็ถูกเก็บลง Database 
+     // โดยใช้ parameter เป็น activityId
+      return activityId;
 
     @Override
     public String toString() {
