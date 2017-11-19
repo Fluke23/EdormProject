@@ -39,7 +39,8 @@ public class GeneralForm extends Form{
         this.GeneralFormId = GeneralFormId;
     }
 
-    public String getDescribePurpose() {
+    public String getDescribePurpose(int generalFormId) {
+        // method สำหรับให้ Student กรอกข้อมูลจุดประสลค์ของเรื่องที่จะ ส่งคำร้องทั่วไป โดยมี parameter คือ formGeneralId
         return describePurpose;
     }
 
@@ -47,7 +48,8 @@ public class GeneralForm extends Form{
         this.describePurpose = describePurpose;
     }
 
-    public String getAdvisorComment() {
+    public String getAdvisorComment(String GeneralFormlId) {
+         // method สำหรับให้ advosor กรอกข้อมูลถึงคำแนะนำหรือคอมเม้น  โดยมี parameter คือ formGeneralId
         return AdvisorComment;
     }
 
@@ -60,15 +62,8 @@ public String getGeneralForm(studentId){
         return generalFormId;
     }
     
-    public String describePurpose(formId){
-      // method สำหรับให้ Student กรอกข้อมูลจุดประสลค์ของเรื่องที่จะ ส่งคำร้องทั่วไป โดยมี parameter คือ formGeneralId
-      return  describePurpose;
-      }
-public String AdvisorComment (GeneralFormlId){
-      // method สำหรับให้ advosor กรอกข้อมูลถึงคำแนะนำหรือคอมเม้น  โดยมี parameter คือ formGeneralId
-      
-      return AdvisorComment;
-      }
+   
+     
     
     @Override
     public String toString() {
