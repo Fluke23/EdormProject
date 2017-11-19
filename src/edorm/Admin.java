@@ -65,27 +65,27 @@ public class Admin extends User{
       return activityId;
       }
        
-      public int deletePoint (activityId){
+      public int deletePoint (int activityId){
       //   เป็น method สำหรับ admin ไว้ ลบ point สำหรับ activity นั้นๆ โดยใช้ parameter เป็น activityId  
       return pointId;
       }
-      public int updatePoint (activityId){
+      public int updatePoint int (activityId){
       //  เป็น method สำหรับ admin ไว้ update(แก้ไข) point สำหรับ activity นั้นๆ โดยใช้ parameter เป็น activityId หลังจากแก้ไขเสร็จ ข้อมูลใหม่ 
       //จะถูกเก็บลง database และ ถูกดึงึ้นมาโชว์ใหม่ ผ่าน object ของ activity นั้นๆ 
       return pointId;
       }
     
-     public int createPacel(studentName){
+     public int createPacel(String studentName){
         // เป็น method สำหรับ admin ไว้สำหรับสร้าง pacel ของที่ถูกส่งมา โดยมีการส่ง studentName เป็น parameter
         return pacelId;
       }
     
-    public int deletePacel(studentName){
+    public int deletePacel(String studentName){
         // เป็น method สำหรับ admin ไว้สำหรับลบ pacel  โดยมีการส่ง studentName เป็น parameter
         return pacelId;
      }
     
-    public int  updatePacel(studentName){
+    public int  updatePacel(String studentName){
         //เป็น method สำหรับ admin ไว้สำหรับแก้ไข pacel สำหรับอันที่ต้องการแก้ไขข้อมูล โดยมีการส่ง studentName เป็น parameter
         return pacelId; 
      }
