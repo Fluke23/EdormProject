@@ -40,8 +40,8 @@ public class GeneralForm extends Form{
         this.AdvisorComment = AdvisorComment;
     }
 public String getGeneralForm(studentId){
-        //เป็น method ไว้สำหรับ ให้ student ดึงข้อมูลของหน้า repairForm  โดยเมื่อ user เข้ามาแอพพลิเคชั่นและกด แบบฟอร์มออนไลน์ หลังจากนั้นกด ฟอร์มการซ่อม 
-        // ก็จะมีการดึงข้อมูลจากรูปแบบฟอร์มการซ่อม ขึ้นมาโชว์ โดยมีการส่ง studentId เป็น parameter 
+        //เป็น method ไว้สำหรับ ให้ student ดึงข้อมูลของหน้า generalForm  โดยเมื่อ user เข้ามาแอพพลิเคชั่นและกด แบบฟอร์มออนไลน์ หลังจากนั้นกด แบบฟอร์มคำร้องทั่วไป 
+        // ก็จะมีการดึงข้อมูลจากรูปแบบฟอร์มคำร้องทั่วไป ขึ้นมาโชว์ โดยมีการส่ง studentId เป็น parameter 
         return generalFormId;
     }
     
