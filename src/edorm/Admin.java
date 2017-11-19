@@ -74,6 +74,22 @@ public class Admin extends User{
       //จะถูกเก็บลง database และ ถูกดึงึ้นมาโชว์ใหม่ ผ่าน object ของ activity นั้นๆ 
       return pointId;
       }
+    
+     public int createPacel(){
+        // เป็น method สำหรับ admin ไว้สำหรับสร้าง paccel ของที่ถูกส่งมา โดยมีการส่ง studentName และ studentId เป็น parameter
+        return pacelId;
+      }
+    
+    public int deletePacel(){
+        //หลังจาก กด deleteเสร็จแล้ว ก็ลบข้อมูลใน DB
+        return pacelId;
+     }
+    
+    public int  updatePacel(){
+        return pacelId;
+        //method แทนที่ข้อมูลใหม่ในข้อมูลเดิม 
+        
+     }
 
     @Override
     public String toString() {
