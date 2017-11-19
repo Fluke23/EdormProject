@@ -89,6 +89,19 @@ public class Admin extends User{
         //เป็น method สำหรับ admin ไว้สำหรับแก้ไข pacel สำหรับอันที่ต้องการแก้ไขข้อมูล โดยมีการส่ง studentName เป็น parameter
         return pacelId; 
      }
+    
+      }
+    private int createPayment(){
+        //method ที่ใช้ในการสร้าง payment (ค่าน้ำ ค่าไฟ) โดยมีการส่ง paymentId เป็น parameter 
+        return paymentId;
+    }
+    private int updatePayment(){
+        //method ที่ใช้ในการอัพเดท payment
+        return paymentId;
+    }
+    private int deletePayment(){
+        //method ที่ใช้ในการลบ payment
+        return paymentId;
 
     @Override
     public String toString() {
