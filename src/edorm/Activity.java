@@ -84,7 +84,7 @@ public class Activity {
      // โดยใช้ parameter เป็น activityId
       return activityId;
       }
-        public int createActivity (activityId){
+        public int createActivity (activityId,activityName,activityPoint,activityDes,activityStatus){
       // เป็น method สำหรับ admin ไว้สร้าง Activity หลังจากนั้นก็เก็บข้อมูลลง Database
       // โดยใช้ parameter เป็น activityId
       return activityId;
