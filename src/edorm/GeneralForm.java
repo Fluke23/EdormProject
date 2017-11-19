@@ -13,15 +13,30 @@ public class GeneralForm extends Form{
     
     private String describePurpose; 
     private String AdvisorComment;
+    private int GeneralFormId;
 
-    public GeneralForm(String stdFac, String stdDepart, int RoomNumber, String stdEmail, String Describe) {
-        super(stdFac, stdDepart, RoomNumber, stdEmail, Describe);
-    }
+    
 
-    public GeneralForm(String describePurpose, String AdvisorComment, String stdFac, String stdDepart, int RoomNumber, String stdEmail, String Describe) {
+   
+
+    public GeneralForm(String describePurpose, String AdvisorComment, int GeneralFormId, String stdFac, String stdDepart, int RoomNumber, String stdEmail, String Describe) {
         super(stdFac, stdDepart, RoomNumber, stdEmail, Describe);
         this.describePurpose = describePurpose;
         this.AdvisorComment = AdvisorComment;
+        this.GeneralFormId = GeneralFormId;
+    }
+    
+    
+    public GeneralForm(String stdFac, String stdDepart, int RoomNumber, String stdEmail, String Describe) {
+        super(stdFac, stdDepart, RoomNumber, stdEmail, Describe);
+    }
+    
+    public int getGeneralFormId() {
+        return GeneralFormId;
+    }
+
+    public void setGeneralFormId(int GeneralFormId) {
+        this.GeneralFormId = GeneralFormId;
     }
 
     public String getDescribePurpose() {
@@ -49,15 +64,15 @@ public String getGeneralForm(studentId){
       // method สำหรับให้ Student กรอกข้อมูลจุดประสลค์ของเรื่องที่จะ ส่งคำร้องทั่วไป โดยมี parameter คือ formGeneralId
       return  describePurpose;
       }
-public String AdvisorComment (formGeneralId){
+public String AdvisorComment (GeneralFormlId){
       // method สำหรับให้ advosor กรอกข้อมูลถึงคำแนะนำหรือคอมเม้น  โดยมี parameter คือ formGeneralId
       
       return AdvisorComment;
       }
     
     @Override
-    public String toString(formGeneralId) {
-        return "GeneralForm{" + "describePurpose=" + describePurpose + ", AdvisorComment=" + AdvisorComment + '}';
+    public String toString() {
+        return "GeneralForm{" + "describePurpose=" + describePurpose + ", AdvisorComment=" + AdvisorComment + ", GeneralFormId=" + GeneralFormId + '}';
     }
     //เพิ่ม generalFormId และแก้ใน UML ด้วยนะ 
     
