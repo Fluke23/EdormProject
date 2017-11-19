@@ -89,19 +89,7 @@ public class Payment {
    /* ------------------------------*/
     private int getPayment(){
         return paymentId;
-    }
-    private int createPayment(){
-        //method ที่ใช้ในการสร้าง payment
-        return paymentId;
-    }
-    private int updatePayment(){
-        //method ที่ใช้ในการอัพเดท payment
-        return paymentId;
-    }
-    private int deletePayment(){
-        //method ที่ใช้ในการลบ payment
-        return paymentId;
-    }
+ 
     private int paymentUtility(){
         // method ไรวะ ลืมม แล้วอันนี้ 
         return paymentId;
