@@ -38,7 +38,8 @@ public class RepairForm extends Form{
         this.repairFormId = RepairFormId;
     }
 
-    public String getDetailProcessing() {
+    public String getDetailProcessing(repairFormId) {
+        // method สำหรับให้ผู้ดูแลการซ่อม(พนังงานหรือช่างซ่อม) อธิบายการดำเนินการซ่อมแซม โดยมีการส่ง parameter เป็น repairFormId
         return DetailProcessing;
     }
 
@@ -55,6 +56,7 @@ public class RepairForm extends Form{
     }
 
    
+<<<<<<< HEAD
  
 //<<<<<<< HEAD
 public String describeThingRepair(int repairFormId){
@@ -69,6 +71,9 @@ public String DetailProcessing (int repairFormId){
       // method สำหรับให้ผู้ดูแลการซ่อม(พนังงานหรือช่างซ่อม) อธิบายการดำเนินการซ่อมแซม โดยมีการส่ง parameter เป็น repairFormId
       return DetailProcessing;
       }
+=======
+
+>>>>>>> 8ac61dd0bc98f85af27ed6b3593f035f0f0ccd68
 
     
     
