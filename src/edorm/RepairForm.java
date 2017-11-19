@@ -21,7 +21,8 @@ public class RepairForm extends Form{
         this.DetailProcessing = DetailProcessing;
     }
 
-    public String getDescribeThingRepair() {
+    public String getDescribeThingRepair(repairFormId) {
+        // method สำหรับให้ Student อธิบายสิ่งของที่เสีย ที่ต้องการซ่อมแซม โดยมี parameter คือ repairFormId
         return describeThingRepair;
     }
 
@@ -56,7 +57,7 @@ public class RepairForm extends Form{
    
  
 public String describeThingRepair(repairFormId){
-      // method สำหรับให้ Student อธิบายสิ่งของที่เสีย ที่ต้องการซ่อมแซม โดยมี parameter คือ repairFormId
+      
       return  describeThingRepair;
       }
 public String DetailProcessing (repairFormId){
