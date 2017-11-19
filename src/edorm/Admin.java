@@ -63,6 +63,7 @@ public class Admin extends User{
     //จากนั้น ก็แก้ไข แล้วบันทึก หลังจากนั้นข้อมูลทั้งหมดก็ถูกเก็บลง Database 
      // โดยใช้ parameter เป็น activityId
       return activityId;
+      }
        
       public int deletePoint (activityId){
       //   เป็น method สำหรับ admin ไว้ ลบ point สำหรับ activity นั้นๆ โดยใช้ parameter เป็น activityId  
