@@ -109,8 +109,13 @@ public class Admin extends User{
         return  GeneralFormId;
     }
     
-     private int updateGeneralForm(admin,generalFormId){
+     private int updateGeneralForm(adminId,generalFormId){
         //เป็น method สำหรบ admin ใช้ในการอัพเดท GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId เป็น parameter;
+        return  GeneralFormId;
+    }
+    
+     private int deleteGeneralForm(adminId,generalFormId){
+        //เป็น method สำหรบ admin ใช้ในการลบ GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId เป็น parameter;
         return  GeneralFormId;
     }
     
