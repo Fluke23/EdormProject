@@ -92,9 +92,19 @@ public class Admin extends User{
     
       
     private int createWaterPayment(paymentId ,paymentName, paymentAmountWater, paymentStatus,  paymentDate ,studentRoom){
-        //method สำหรับ admin ที่ใช้ในการสร้าง payment (ค่าน้ำ ค่าไฟ) โดยมีการส่ง paymentId ,paymentName, paymentAmountWater, paymentStatus,  paymentDate ,studentRoom เป็น parameter 
+        //method สำหรับ admin ที่ใช้ในการสร้าง payment (ค่าน้ำ ) โดยมีการส่ง paymentId ,paymentName, paymentAmountWater, paymentStatus,  paymentDate ,studentRoom เป็น parameter 
         return paymentId;
     }
+    
+    private int createPowerPayment(paymentId ,paymentName, paymentAmountPower, paymentStatus,  paymentDate ,studentRoom){
+        //method สำหรับ admin ที่ใช้ในการสร้าง payment (ค่าไฟ) โดยมีการส่ง paymentId ,paymentName, paymentAmountPower, paymentStatus,  paymentDate ,studentRoom เป็น parameter 
+        return paymentId;
+    }
+    //----!!---------//
+    //เราแยก method ค่าไฟ กับ ค่าน้ำออกจากกัน ทำได้ใช่ไหม. ตอบหน่อยเถอะน้าาาาา. 
+     //----!!---------//
+  
+    
     private int updatePayment(paymentId){
         //method สำหรับ admin ที่ใช้ในการแก้ไข payment โดยมีการส่ง paymentId เป็น parameter
         return paymentId;
