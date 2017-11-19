@@ -60,7 +60,7 @@ public class Message {
     public String getMessage(){
         return messageContent;
     }
-    public String createMessage(studentId,messageTopic,messageDate,messageContent){
+    public String createMessage(int studentId,String messageTopic,Date messageDate,String messageContent){
         //method ไว้สำหรับสร้าง personal messaging ไว้ส่ง หา admin เพื่อติดต่อ  มีการส่ง studentid,messageTopic,messageDate,messageContent เป็น parameter 
         return messageContent;
     }

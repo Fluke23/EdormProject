@@ -48,88 +48,98 @@ public class Admin extends User{
         //method เกี่ยวกับการตรวจเช็คว่า Username และpassword ถูกต้องหรือไม่ และมีใน Database หรือเปล่า 
        
     }
-     public int createActivity (activityId,activityName,activityPoint,activityDes,activityStatus){
+     public int createActivity (int activityId,String activityName,int activityPoint,String activityDes,String activityStatus){
       // เป็น method สำหรับ admin ไว้สร้าง Activity หลังจากนั้นก็เก็บข้อมูลลง Database
       // โดยใช้ parameter เป็น activityId
       return activityId;
       }
-        public int deleteActivity (activityId){
+        public int deleteActivity (int activityId){
       // เป็น method ลบ activity สำหรับ admin โดย สามารถลบ ข้อมูลท้ั้งหมดของ activity นั้น โดย ใช้ paramether เป็น activityId  
       return activityId;
       }
     
-      public int updateActivity (activityId){
+      public int updateActivity (int activityId){
       // เป็น method update (แก้ไข) Activity สำหรับ admin โดย admin สามารถ แก้ไข ชื่อ Activity , Detail Activity and point Activity โดยดึงข้อมูลจาก Object ของ Acivity ขึ้นมา 
     //จากนั้น ก็แก้ไข แล้วบันทึก หลังจากนั้นข้อมูลทั้งหมดก็ถูกเก็บลง Database 
      // โดยใช้ parameter เป็น activityId
       return activityId;
       }
        
-      public int deletePoint (activityId){
+      public int deletePoint (int activityId){
       //   เป็น method สำหรับ admin ไว้ ลบ point สำหรับ activity นั้นๆ โดยใช้ parameter เป็น activityId  
       return pointId;
       }
-      public int updatePoint (activityId){
+      public int updatePoint  (int activityId){
       //  เป็น method สำหรับ admin ไว้ update(แก้ไข) point สำหรับ activity นั้นๆ โดยใช้ parameter เป็น activityId หลังจากแก้ไขเสร็จ ข้อมูลใหม่ 
       //จะถูกเก็บลง database และ ถูกดึงึ้นมาโชว์ใหม่ ผ่าน object ของ activity นั้นๆ 
       return pointId;
       }
     
-     public int createPacel(studentName){
+     public int createPacel(String studentName){
         // เป็น method สำหรับ admin ไว้สำหรับสร้าง pacel ของที่ถูกส่งมา โดยมีการส่ง studentName เป็น parameter
         return pacelId;
       }
     
-    public int deletePacel(studentName){
+    public int deletePacel(String studentName){
         // เป็น method สำหรับ admin ไว้สำหรับลบ pacel  โดยมีการส่ง studentName เป็น parameter
         return pacelId;
      }
     
-    public int  updatePacel(studentName){
+    public int  updatePacel(String studentName){
         //เป็น method สำหรับ admin ไว้สำหรับแก้ไข pacel สำหรับอันที่ต้องการแก้ไขข้อมูล โดยมีการส่ง studentName เป็น parameter
         return pacelId; 
      }
     
       
-    private int createWaterPayment(paymentId ,paymentName, paymentAmountWater, paymentStatus,  paymentDate ,studentRoom){
-        //method สำหรับ admin ที่ใช้ในการสร้าง payment (ค่าน้ำ ค่าไฟ) โดยมีการส่ง paymentId ,paymentName, paymentAmountWater, paymentStatus,  paymentDate ,studentRoom เป็น parameter 
+    private int createWaterPayment(int paymentId ,String paymentName, int paymentAmountWater,boolean paymentStatus,Date paymentDate ,int studentRoom){
+        //method สำหรับ admin ที่ใช้ในการสร้าง payment (ค่าน้ำ ) โดยมีการส่ง paymentId ,paymentName, paymentAmountWater, paymentStatus,  paymentDate ,studentRoom เป็น parameter 
         return paymentId;
     }
-    private int updatePayment(paymentId){
+    
+    private int createPowerPayment(int paymentId ,String paymentName, int paymentAmountPower,String paymentStatus, Date paymentDate ,int studentRoom){
+        //method สำหรับ admin ที่ใช้ในการสร้าง payment (ค่าไฟ) โดยมีการส่ง paymentId ,paymentName, paymentAmountPower, paymentStatus,  paymentDate ,studentRoom เป็น parameter 
+        return paymentId;
+    }
+    //----!!---------//
+    //เราแยก method ค่าไฟ กับ ค่าน้ำออกจากกัน ทำได้ใช่ไหม. ตอบหน่อยเถอะน้าาาาา. 
+     //----!!---------//
+  
+    
+    private int updatePayment(int paymentId){
         //method สำหรับ admin ที่ใช้ในการแก้ไข payment โดยมีการส่ง paymentId เป็น parameter
         return paymentId;
     }
-    private int deletePayment(paymentId){
+    private int deletePayment(int paymentId){
         //method สำหรับ admin ที่ใช้ในการลบ payment โดยมีการส่ง paymentId เป็น parameter
         return paymentId;
    }
 
-    private int createGeneralForm(adminId, generalFormId,describePurpose,AdvisorComment){
+    private int createGeneralForm(int adminId, int generalFormId,String describePurpose,String AdvisorComment){
         //เป็น method สำหรบ admin ใช้ในการสร้าง GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId,describePurpose,AdvisorComment เป็น parameter;
         return  GeneralFormId;
     }
     
-     private int updateGeneralForm(adminId,generalFormId){
+     private int updateGeneralForm(int adminId,int generalFormId){
         //เป็น method สำหรบ admin ใช้ในการอัพเดท GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId เป็น parameter;
         return  GeneralFormId;
     }
     
-     private int deleteGeneralForm(adminId,generalFormId){
+     private int deleteGeneralForm(int adminId,int generalFormId){
         //เป็น method สำหรบ admin ใช้ในการลบ GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId เป็น parameter;
         return  GeneralFormId;
     }
     
-     private int createRepairForm(adminId,repairForm,describeThingRepair,detailProcessing){
+     private int createRepairForm(int adminId,int repairFormId,String describeThingRepair,String detailProcessing){
         //เป็น method สำหรับ admin ใช้ในการสร้าง GeneralForm ขึ้นมา โดยมีกาส่ง adminId, repairFormId, describeThingRepair,detailProcessing เป็น parameter;
         return  repairFormId;
     }
     
-      private int updateRepairForm(adminId,repairFormId){
+      private int updateRepairForm(int adminId,int repairFormId){
         //เป็น method สำหรับ admin ใช้ในการแก้ไข repairForm  โดยมีกาส่ง adminId, repairFormId เป็น parameter;
         return  repairFormId;
     }
     
-    private int deleteRepairForm(adminId,repairFormId){
+    private int deleteRepairForm(int adminId,int repairFormId){
         //เป็น method สำรับ admin ใช้ในการลบ repairForm  โดยมีกาส่ง adminId, repairFormId เป็น parameter;
         return  repairFormId;
     }
@@ -144,3 +154,4 @@ public class Admin extends User{
    
     
 }
+///test
