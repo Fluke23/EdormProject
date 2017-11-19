@@ -41,15 +41,16 @@ public class GeneralForm extends Form{
     }
 
     @Override
-    public String toString() {
+    public String toString(formGeneralId) {
         return "GeneralForm{" + "describePurpose=" + describePurpose + ", AdvisorComment=" + AdvisorComment + '}';
     }
-    public String describePurpose(){
-      // method รวมข้อมูลของ point  ของdata base
+    public String describePurpose(formId){
+      // method สำหรับให้ Student กรอกข้อมูลจุดประสลค์ของเรื่องที่จะ ส่งคำร้องทั่วไป โดยมี parameter คือ formGeneralId
       return  describePurpose;
       }
-public String AdvisorComment (){
-      // method รวมข้อมูลของ point  ของdata base
+public String AdvisorComment (formGeneralId){
+      // method สำหรับให้ advosor กรอกข้อมูลถึงคำแนะนำหรือคอมเม้น  โดยมี parameter คือ formGeneralId
+      
       return AdvisorComment;
       }
     
