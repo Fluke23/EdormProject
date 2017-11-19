@@ -78,21 +78,7 @@ public class Activity {
       // โดยใช้ parameter เป็น studentId
       return activityId;
       }
-       public int updateActivity (activityId){
-      // เป็น method update (แก้ไข) Activity สำหรับ admin โดย admin สามารถ แก้ไข ชื่อ Activity , Detail Activity and point Activity โดยดึงข้อมูลจาก Object ของ Acivity ขึ้นมา 
-    //จากนั้น ก็แก้ไข แล้วบันทึก หลังจากนั้นข้อมูลทั้งหมดก็ถูกเก็บลง Database 
-     // โดยใช้ parameter เป็น activityId
-      return activityId;
-      }
-        public int createActivity (activityId,activityName,activityPoint,activityDes,activityStatus){
-      // เป็น method สำหรับ admin ไว้สร้าง Activity หลังจากนั้นก็เก็บข้อมูลลง Database
-      // โดยใช้ parameter เป็น activityId
-      return activityId;
-      }
-        public int deleteActivity (activityId){
-      // เป็น method ลบ activity สำหรับ admin โดย สามารถลบ ข้อมูลท้ั้งหมดของ activity นั้น โดย ใช้ paramether เป็น activityId  
-      return activityId;
-      }
+      
       public int getPoint (studentId){
       // เป็น method ไว้ดึงคะแนนขึ้นมาโชว์บน activity  โดยเมื่อ user กดเข้าไปดูใน หน้า Activity ก็จะทำการดึงข้อมูลของ point นั้นๆ ของแต่ละ activity มาจาก 
           // object ของ activity   ใช้ parameter เป็น studentId
