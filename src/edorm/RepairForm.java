@@ -11,17 +11,18 @@ package edorm;
  */
 public class RepairForm extends Form{
     private String describeThingRepair;
-    private int RepairFormId;
+    private int repairFormId;
     private String DetailProcessing ;
 
     public RepairForm(String describeThingRepair, int RepairFormId, String DetailProcessing, String stdFac, String stdDepart, int RoomNumber, String stdEmail, String Describe) {
         super(stdFac, stdDepart, RoomNumber, stdEmail, Describe);
         this.describeThingRepair = describeThingRepair;
-        this.RepairFormId = RepairFormId;
+        this.repairFormId = RepairFormId;
         this.DetailProcessing = DetailProcessing;
     }
 
-    public String getDescribeThingRepair() {
+    public String getDescribeThingRepair(int repairFormId) {
+        // method สำหรับให้ Student อธิบายสิ่งของที่เสีย ที่ต้องการซ่อมแซม โดยมี parameter คือ repairFormId
         return describeThingRepair;
     }
 
@@ -30,11 +31,11 @@ public class RepairForm extends Form{
     }
 
     public int getRepairFormId() {
-        return RepairFormId;
+        return repairFormId;
     }
 
     public void setRepairFormId(int RepairFormId) {
-        this.RepairFormId = RepairFormId;
+        this.repairFormId = RepairFormId;
     }
 
     public String getDetailProcessing() {
@@ -50,13 +51,18 @@ public class RepairForm extends Form{
     public String getRepairForm(int studentId){
         //เป็น method ไว้สำหรับ ให้ student ดึงข้อมูลของหน้า repairForm  โดยเมื่อ user เข้ามาแอพพลิเคชั่นและกด แบบฟอร์มออนไลน์ หลังจากนั้นกด ฟอร์มการซ่อม 
         // ก็จะมีการดึงข้อมูลจากรูปแบบฟอร์มการซ่อม ขึ้นมาโชว์ โดยมีการส่ง studentId เป็น parameter 
-        return RepairFormId;
+        return repairFormId;
     }
 
    
  
+//<<<<<<< HEAD
 public String describeThingRepair(int repairFormId){
       // method สำหรับให้ Student อธิบายสิ่งของที่เสีย ที่ต้องการซ่อมแซม โดยมี parameter คือ repairFormId
+//=======
+public String describeThingRepair(int repairFormId){
+      
+//>>>>>>> efa45351fae23a98ba2cc7d3cf37a5ae7c8381da
       return  describeThingRepair;
       }
 public String DetailProcessing (int repairFormId){
@@ -71,7 +77,7 @@ public String DetailProcessing (int repairFormId){
 
     @Override
     public String toString() {
-        return "RepairForm{" + "describeThingRepair=" + describeThingRepair + ", RepairFormId=" + RepairFormId + ", DetailProcessing=" + DetailProcessing + '}';
+        return "RepairForm{" + "describeThingRepair=" + describeThingRepair + ", RepairFormId=" + repairFormId + ", DetailProcessing=" + DetailProcessing + '}';
     }
     
     

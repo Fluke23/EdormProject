@@ -69,7 +69,7 @@ public class Admin extends User{
       //   เป็น method สำหรับ admin ไว้ ลบ point สำหรับ activity นั้นๆ โดยใช้ parameter เป็น activityId  
       return pointId;
       }
-      public int updatePoint int (activityId){
+      public int updatePoint  (int activityId){
       //  เป็น method สำหรับ admin ไว้ update(แก้ไข) point สำหรับ activity นั้นๆ โดยใช้ parameter เป็น activityId หลังจากแก้ไขเสร็จ ข้อมูลใหม่ 
       //จะถูกเก็บลง database และ ถูกดึงึ้นมาโชว์ใหม่ ผ่าน object ของ activity นั้นๆ 
       return pointId;
@@ -91,12 +91,12 @@ public class Admin extends User{
      }
     
       
-    private int createWaterPayment(paymentId ,paymentName, paymentAmountWater, paymentStatus,  paymentDate ,studentRoom){
+    private int createWaterPayment(int paymentId ,String paymentName, int paymentAmountWater,boolean paymentStatus,Date paymentDate ,int studentRoom){
         //method สำหรับ admin ที่ใช้ในการสร้าง payment (ค่าน้ำ ) โดยมีการส่ง paymentId ,paymentName, paymentAmountWater, paymentStatus,  paymentDate ,studentRoom เป็น parameter 
         return paymentId;
     }
     
-    private int createPowerPayment(paymentId ,paymentName, paymentAmountPower, paymentStatus,  paymentDate ,studentRoom){
+    private int createPowerPayment(int paymentId ,String paymentName, int paymentAmountPower,String paymentStatus, Date paymentDate ,int studentRoom){
         //method สำหรับ admin ที่ใช้ในการสร้าง payment (ค่าไฟ) โดยมีการส่ง paymentId ,paymentName, paymentAmountPower, paymentStatus,  paymentDate ,studentRoom เป็น parameter 
         return paymentId;
     }
@@ -105,41 +105,41 @@ public class Admin extends User{
      //----!!---------//
   
     
-    private int updatePayment(paymentId){
+    private int updatePayment(int paymentId){
         //method สำหรับ admin ที่ใช้ในการแก้ไข payment โดยมีการส่ง paymentId เป็น parameter
         return paymentId;
     }
-    private int deletePayment(paymentId){
+    private int deletePayment(int paymentId){
         //method สำหรับ admin ที่ใช้ในการลบ payment โดยมีการส่ง paymentId เป็น parameter
         return paymentId;
    }
 
-    private int createGeneralForm(adminId, generalFormId,describePurpose,AdvisorComment){
+    private int createGeneralForm(int adminId, int generalFormId,String describePurpose,String AdvisorComment){
         //เป็น method สำหรบ admin ใช้ในการสร้าง GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId,describePurpose,AdvisorComment เป็น parameter;
         return  GeneralFormId;
     }
     
-     private int updateGeneralForm(adminId,generalFormId){
+     private int updateGeneralForm(int adminId,int generalFormId){
         //เป็น method สำหรบ admin ใช้ในการอัพเดท GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId เป็น parameter;
         return  GeneralFormId;
     }
     
-     private int deleteGeneralForm(adminId,generalFormId){
+     private int deleteGeneralForm(int adminId,int generalFormId){
         //เป็น method สำหรบ admin ใช้ในการลบ GeneralForm ขึ้นมา โดยมีกาส่ง adminId, generalFormId เป็น parameter;
         return  GeneralFormId;
     }
     
-     private int createRepairForm(adminId,repairForm,describeThingRepair,detailProcessing){
+     private int createRepairForm(int adminId,int repairFormId,String describeThingRepair,String detailProcessing){
         //เป็น method สำหรับ admin ใช้ในการสร้าง GeneralForm ขึ้นมา โดยมีกาส่ง adminId, repairFormId, describeThingRepair,detailProcessing เป็น parameter;
         return  repairFormId;
     }
     
-      private int updateRepairForm(adminId,repairFormId){
+      private int updateRepairForm(int adminId,int repairFormId){
         //เป็น method สำหรับ admin ใช้ในการแก้ไข repairForm  โดยมีกาส่ง adminId, repairFormId เป็น parameter;
         return  repairFormId;
     }
     
-    private int deleteRepairForm(adminId,repairFormId){
+    private int deleteRepairForm(int adminId,int repairFormId){
         //เป็น method สำรับ admin ใช้ในการลบ repairForm  โดยมีกาส่ง adminId, repairFormId เป็น parameter;
         return  repairFormId;
     }
