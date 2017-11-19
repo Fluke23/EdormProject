@@ -87,7 +87,7 @@ public class Payment {
     }
     
    /* ------------------------------*/
-    private int getPayment(studentId,studentRoom){
+    private int getPayment(int studentId,int studentRoom){
         // เป็น method สำหรับ ไว้ดึงข้อมูลจากใบ payment ของแต่ละคน  โดยมื่อ User เข้าใช้งาน แล้วกดจ่ายค่าไฟ ก็จะ ดึงข้อมูล จากตาราง payment ขึ้นมาโชว์ 
         //โดยมีการส่ง studentId และ studentRoomเป็น parameter 
         return paymentId;

@@ -73,13 +73,13 @@ public class Activity {
         this.activityDesc = activityDesc;
         this.activityStatus = activityStatus;
     }
-      public int getActivity (studentId){
+      public int getActivity (int studentId){
       // เป็น method ไว้ดูคะแนนโดยเมื่อ user กดเข้าไป จะทำการดึงค่าคะแนนรวมของ Object Student และลิสขัอมูลกิจกรรมต่างๆ มาจาก Object ของ Activity" 
       // โดยใช้ parameter เป็น studentId
       return activityId;
       }
       
-      public int getPoint (studentId){
+      public int getPoint (int studentId){
       // เป็น method ไว้ดึงคะแนนขึ้นมาโชว์บน activity  โดยเมื่อ user กดเข้าไปดูใน หน้า Activity ก็จะทำการดึงข้อมูลของ point นั้นๆ ของแต่ละ activity มาจาก 
           // object ของ activity   ใช้ parameter เป็น studentId
       return pointId;

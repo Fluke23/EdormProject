@@ -47,19 +47,19 @@ public class RepairForm extends Form{
    
     
     
-    public String getRepairForm(studentId){
+    public String getRepairForm(int studentId){
         //เป็น method ไว้สำหรับ ให้ student ดึงข้อมูลของหน้า repairForm  โดยเมื่อ user เข้ามาแอพพลิเคชั่นและกด แบบฟอร์มออนไลน์ หลังจากนั้นกด ฟอร์มการซ่อม 
         // ก็จะมีการดึงข้อมูลจากรูปแบบฟอร์มการซ่อม ขึ้นมาโชว์ โดยมีการส่ง studentId เป็น parameter 
-        return repairFormId;
+        return RepairFormId;
     }
 
    
  
-public String describeThingRepair(repairFormId){
+public String describeThingRepair(int repairFormId){
       // method สำหรับให้ Student อธิบายสิ่งของที่เสีย ที่ต้องการซ่อมแซม โดยมี parameter คือ repairFormId
       return  describeThingRepair;
       }
-public String DetailProcessing (repairFormId){
+public String DetailProcessing (int repairFormId){
       // method สำหรับให้ผู้ดูแลการซ่อม(พนังงานหรือช่างซ่อม) อธิบายการดำเนินการซ่อมแซม โดยมีการส่ง parameter เป็น repairFormId
       return DetailProcessing;
       }

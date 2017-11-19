@@ -56,10 +56,10 @@ public class GeneralForm extends Form{
     public void setAdvisorComment(String AdvisorComment) {
         this.AdvisorComment = AdvisorComment;
     }
-public String getGeneralForm(studentId){
+public int getGeneralForm(int studentId){
         //เป็น method ไว้สำหรับ ให้ student ดึงข้อมูลของหน้า generalForm  โดยเมื่อ user เข้ามาแอพพลิเคชั่นและกด แบบฟอร์มออนไลน์ หลังจากนั้นกด แบบฟอร์มคำร้องทั่วไป 
         // ก็จะมีการดึงข้อมูลจากรูปแบบฟอร์มคำร้องทั่วไป ขึ้นมาโชว์ โดยมีการส่ง studentId เป็น parameter 
-        return generalFormId;
+        return GeneralFormId;
     }
     
    
