@@ -47,9 +47,9 @@ public class Pacel {
     }
     
     
-     public int getPacel(parameter){
+     public int getPacel(studentName){
         //เป็น method ไว้สำหรับให้ User เข้ามาดู pacel ของตัวเอง โดยเมื่อ .user ทำการเข้าแอพพลิเคชั่น กด เช็คพัสดุ จะทำการ ดึงข้อมูลจาห object pacel ใน
-         //database ขึ้นมาโชว์ . โดยมีการใช้ . StudentName เป็น parameter
+         //database ขึ้นมาโชว์ . โดยมีการใช้ . studentName เป็น parameter
         return pacelId;
     }
   
