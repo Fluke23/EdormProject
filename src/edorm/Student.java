@@ -15,18 +15,17 @@ public class Student {
     private int stdYear;
     private String stdAddress;
     private int stdPhone;
-    private int stdActivityPoint;
-    private int stdActivityAmount;
+     private int point_amount;
 
-    public Student(int stdId, String stdName, int stdYear, String stdAddress, int stdPhone, int stdActivityPoint, int stdActivityAmount) {
+   public Student(int stdId, String stdName, int stdYear, String stdAddress, int stdPhone, int point_amount) {
         this.stdId = stdId;
         this.stdName = stdName;
         this.stdYear = stdYear;
         this.stdAddress = stdAddress;
         this.stdPhone = stdPhone;
-        this.stdActivityPoint = stdActivityPoint;
-        this.stdActivityAmount = stdActivityAmount;
+        this.point_amount = point_amount;
     }
+
 
     public int getStdId() {
         return stdId;
@@ -68,31 +67,19 @@ public class Student {
         this.stdPhone = stdPhone;
     }
 
-    public int getStdActivityPoint() {
-        return stdActivityPoint;
-    }
+   
 
-    public void setStdActivityPoint(int stdActivityPoint) {
-        this.stdActivityPoint = stdActivityPoint;
-    }
-
-    public int getStdActivityAmount() {
-        return stdActivityAmount;
-    }
-
-    public void setStdActivityAmount(int stdActivityAmount) {
-        this.stdActivityAmount = stdActivityAmount;
-    }
-    
+   
+   
     private void login(String userName,String pass){
         //method เกี่ยวกับการตรวจเช็คว่า Username และpassword ถูกต้องหรือไม่ และมีใน Database หรือเปล่า 
 
     }
-    
-    private int getPointAmount(){
-        // method รวม point ทุกกิจกรรมและสรุปออกมาเป็น คะแนนรวมกิจกรรมทั้งหมด 
-       return stdActivityPoint;
+    public int getPoint_amount() {
+        //method แสดงคะแนนกิจกรรมที่นักศึกษาเคยทำมทั้งหมด โดยจะแสดงรายการกิจกรรมที่เคยเข้าจาก Object ของ class activity
     }
+
+   
 
     @Override
     public String toString() {
