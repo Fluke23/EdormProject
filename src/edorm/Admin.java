@@ -80,13 +80,13 @@ public class Admin extends User{
         return pacelId;
       }
     
-    public int deletePacel(String studentName){
-        // เป็น method สำหรับ admin ไว้สำหรับลบ pacel  โดยมีการส่ง studentName เป็น parameter
+    public int deletePacel(int pacelId){
+        // เป็น method สำหรับ admin ไว้สำหรับลบ pacel  โดยมีการส่ง pacelId เป็น parameter
         return pacelId;
      }
     
-    public int  updatePacel(String studentName){
-        //เป็น method สำหรับ admin ไว้สำหรับแก้ไข pacel สำหรับอันที่ต้องการแก้ไขข้อมูล โดยมีการส่ง studentName เป็น parameter
+    public int  updatePacel(int pacelId){
+        //เป็น method สำหรับ admin ไว้สำหรับแก้ไข pacel สำหรับอันที่ต้องการแก้ไขข้อมูล โดยมีการส่ง pacelId เป็น parameter
         return pacelId; 
      }
     
